@@ -8,10 +8,7 @@ class Team:
     def add_player(self, new_player):
         self.players.append(new_player)
     def has_player(self, name):
-        for player in self.players:
-            if player == name:
-                return True
-        return False
+        return name in self.players
     def play_game(self, result):
         if result:
             self.points += 3
