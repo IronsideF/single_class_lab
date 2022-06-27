@@ -3,6 +3,7 @@ class Team:
         self.name = input_name
         self.players = input_players
         self.coach = input_coach
+        self.points = 0
     
     def add_player(self, new_player):
         self.players.append(new_player)
@@ -11,3 +12,6 @@ class Team:
             if player == name:
                 return True
         return False
+    def play_game(self, result):
+        if result:
+            self.points += 3
