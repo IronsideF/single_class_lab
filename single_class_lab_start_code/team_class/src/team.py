@@ -4,3 +4,10 @@ class Team:
         self.players = input_players
         self.coach = input_coach
     
+    def add_player(self, new_player):
+        self.players.append(new_player)
+    def has_player(self, name):
+        for player in self.players:
+            if player == name:
+                return True
+        return False
