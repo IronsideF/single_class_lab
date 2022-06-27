@@ -5,11 +5,11 @@ class TestStudent(unittest.TestCase):
     def setUp(self):
         self.student = Student("Ada", "E42")
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_student_has_name(self):
         self.assertEqual("Ada", self.student.name)
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_student_has_cohort(self):
         self.assertEqual("E42", self.student.cohort)
 
